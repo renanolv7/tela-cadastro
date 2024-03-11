@@ -1,8 +1,12 @@
 :root {
-    --color-links: white;
-    --primary-color: ;
-    --bgblack: black;
+    --color-white: white;
+    --color-border-input: #36AC9C;
+    --grey-color: rgba(255, 255, 255, 0.329);
+    --bgblack: rgba(17, 25, 40, 0.50);
+    --color-btnsubmit: #DADEF7;
+    --color-hover-btn: #29324B;
 }
+
 
 * {
     box-sizing: border-box;
@@ -31,9 +35,9 @@ body {
 
         // Efeito de glassmorphism 
         backdrop-filter: blur(10px) saturate(200%);
-        background-color: rgba(17, 25, 40, 0.50);
+        background-color: var(--bgblack);
         border-radius: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.329);
+        border: 1px solid var(--grey-color);
 
         color: white;
         padding: 10px 36px;
@@ -78,7 +82,7 @@ body {
         input[type=password] {
             width: 100%;
             padding: 10px;
-            border: 2px solid #36AC9C;
+            border: 2px solid var(--color-border-input);
             border-radius: 5px;
         }
 
@@ -89,7 +93,7 @@ body {
             align-items: center;
 
             .btn-submit {
-                background-color: #DADEF7;
+                background-color: var(--color-btnsubmit);
                 height: 40px;
                 text-transform: uppercase;
                 width: 40%;
@@ -98,8 +102,8 @@ body {
 
             .btn-submit:hover {
                 cursor: pointer;
-                background-color: #29324B;
-                color: white;
+                background-color: var(--color-hover-btn);
+                color: var(--color-white);
             }
 
         }
