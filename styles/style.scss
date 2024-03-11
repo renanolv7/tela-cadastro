@@ -1,0 +1,110 @@
+:root {
+    --color-links: white;
+    --primary-color: ;
+    --bgblack: black;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+
+    background-image: url(/assets/images/backgorund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.container {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box-register {
+
+        height: 500px;
+        width: 450px;
+
+        // Efeito de glassmorphism 
+        backdrop-filter: blur(10px) saturate(200%);
+        background-color: rgba(17, 25, 40, 0.50);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.329);
+
+        color: white;
+        padding: 10px 36px;
+
+        .title {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .title-name {
+                font-size: 36px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+
+        .infos {
+
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 14px;
+
+            text-transform: uppercase;
+
+            font-weight: 300;
+
+            .title {
+                display: flex;
+                text-transform: uppercase;
+                justify-content: center;
+
+                font-size: 28px;
+                font-weight: 300;
+            }
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #36AC9C;
+            border-radius: 5px;
+        }
+
+        .btn {
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .btn-submit {
+                background-color: #DADEF7;
+                height: 40px;
+                text-transform: uppercase;
+                width: 40%;
+
+            }
+
+            .btn-submit:hover {
+                cursor: pointer;
+                background-color: #29324B;
+                color: white;
+            }
+
+        }
+
+
+    }
+
+}

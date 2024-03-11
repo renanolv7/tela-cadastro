@@ -1,0 +1,87 @@
+:root {
+  --color-links: white;
+  --primary-color: ;
+  --bgblack: black;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(/assets/images/backgorund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box-register {
+  height: 500px;
+  width: 450px;
+  -webkit-backdrop-filter: blur(10px) saturate(200%);
+          backdrop-filter: blur(10px) saturate(200%);
+  background-color: rgba(17, 25, 40, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.329);
+  color: white;
+  padding: 10px 36px;
+}
+.container .box-register .title {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box-register .title .title-name {
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.container .box-register .infos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.container .box-register .infos .title {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 300;
+}
+.container .box-register input[type=text],
+.container .box-register input[type=email],
+.container .box-register input[type=password] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #36AC9C;
+  border-radius: 5px;
+}
+.container .box-register .btn {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .box-register .btn .btn-submit {
+  background-color: #DADEF7;
+  height: 40px;
+  text-transform: uppercase;
+  width: 40%;
+}
+.container .box-register .btn .btn-submit:hover {
+  cursor: pointer;
+  background-color: #29324B;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
